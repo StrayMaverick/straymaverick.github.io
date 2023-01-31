@@ -1,12 +1,12 @@
 "use strict";
 
 // eslint-disable-next-line prefer-const
-let gameSpeed = 1;
-const baseManaPerSecond = 50;
+let gameSpeed = 3;
+const baseManaPerSecond = 100;
 
 let curTime = new Date();
 let gameTicksLeft = 0;
-let refund = false;
+let refund = true;
 let radarUpdateTime = 0;
 let timeCounter = 0;
 let effectiveTime = 0;
