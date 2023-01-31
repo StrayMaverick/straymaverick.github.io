@@ -1,8 +1,8 @@
 "use strict";
 
 // eslint-disable-next-line prefer-const
-let gameSpeed = 4;
-const baseManaPerSecond = 200;
+let gameSpeed = 3;
+const baseManaPerSecond = 150;
 
 let curTime = new Date();
 let gameTicksLeft = 0;
@@ -13,7 +13,7 @@ let effectiveTime = 0;
 let lastSave = Date.now();
 
 function getSpeedMult(zone = curTown) {
-    let speedMult = 4;
+    let speedMult = 3;
 
     // dark ritual
     if (zone === 0) speedMult *= getRitualBonus(0, 20, 10);
